@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: charcoal;
-            color: black;
+            background-color: #36454F; /* charcoal-like color */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             text-align: center;
+            margin: 0;
+        }
+        .container {
             padding: 20px;
         }
         h1 {
@@ -18,26 +24,33 @@
             margin-bottom: 30px;
         }
         .leaderboard {
-            font-size: 32px;
+            font-size: 24px;
             line-height: 1.8;
-            text-align: left;
-            display: inline-block;
+        }
+        .leaderboard .place {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .total {
+            margin-top: 40px;
+            font-weight: bold;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>CSAT Trophy Board 🏆</h1>
-    <div class="leaderboard">
-<div>🥇First place🥇</div>
-<div>Michelle Calderon 🏆</div>
-<div>🥈Second place🥈</div>
-<div>Alfonso Marquez 🏆</div>
-<div>🥉Third place🥉</div>
-<div>Isaac Gonzalez 🏆</div>
-<div>Bryant Sami 🏆</div>
->
-
-    <div style="margin-top: 40px; font-weight: bold;">Total Reviews: 67</div>
+    <div class="container">
+        <h1>CSAT Trophy Board 🏆</h1>
+        <div class="leaderboard">
+            <div class="place">🥇 First place 🥇</div>
+            <div>Michelle Calderon 🏆</div>
+            <div class="place">🥈 Second place 🥈</div>
+            <div>Alfonso Marquez 🏆</div>
+            <div class="place">🥉 Third place 🥉</div>
+            <div>Isaac Gonzalez 🏆</div>
+            <div>Bryant Sami 🏆</div>
+        </div>
+        <div class="total">Total Reviews: 67</div>
     </div>
 </body>
 </html>
