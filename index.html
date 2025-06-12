@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSAT Trophy Board</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #36454F; /* charcoal-like color */
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-            margin: 0;
-        }
-        .container {
-            padding: 5px;
-        }
-        h1 {
-            font-size: 48px;
-            margin-bottom: 30px;
-        }
-        .leaderboard {
-            font-size: 24px;
-            line-height: 1.8;
-        }
-        .leaderboard .place {
-            font-size: 52px;
-            font-weight: bold;
-        } }
-        .leaderboard .lastplace {
-            font-size: 32px;
-                    }
-        .total {
-            margin-top: 40px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSAT Trophy Board</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #36454F;
+      color: white;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .containerContender {
+      width: 250px;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    .leaderboard {
+      font-size: 24px;
+      line-height: 1.8;
+    }
+
+    .leaderboard .place {
+      font-size: 52px;
+      font-weight: bold;
+    }
+
+    .total {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .lastplace {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>CSAT Trophy Board 🏆</h1>
-        <div class="leaderboard">
-            <div class="place">🥇 First place 🥇</div>
-               <div>Isaac Gonzalez (4) 🏆🏆🏆🏆</div>
-            <div class="place">🥈 Second place 🥈</div>
-                <div>Michelle Calderon (3) 🏆🏆🏆</div>
-                <div> Kayleigh LaCasse (3) 🏆🏆🏆</div>
-            <div class="place">🥉 Third place 🥉</div>
-                <div> Kassius McKenzie (2) 🏆🏆</div>
-            <div class="lastplace">🏃Contender🏃</div>
-                <div>Alfonso Marquez (1) 🏆</div>
-                <div>Bryant Sami (1) 🏆</div>
-                <div>Elizabeth Calderon (1) 🏆</div>
-                <div>Francisco Romero (1) 🏆</div>
-                <div>Gilberto Medero (1) 🏆</div>
-      <div class="total">Total Reviews: 18  NPS Score 83</div>
+  <div class="container">
+    <h1>CSAT Trophy Board 🏆</h1>
+    <div class="leaderboard">
+      <div class="place">🥇 First place 🥇</div>
+      <div>Isaac Gonzalez (4) 🏆🏆🏆🏆</div>
+      <div class="place">🥈 Second place 🥈</div>
+      <div>Michelle Calderon (3) 🏆🏆🏆</div>
+      <div>Kayleigh LaCasse (3) 🏆🏆🏆</div>
+      <div class="place">🥉 Third place 🥉</div>
+      <div>Kassius McKenzie (2) 🏆🏆</div>
+      <div class="total">Total Reviews: 18 NPS Score 83</div>
     </div>
+  </div>
+
+  <div class="containerContender">
+    <div class="lastplace">🏃 Contender 🏃</div>
+    <div>Alfonso Marquez (1) 🏆</div>
+    <div>Bryant Sami (1) 🏆</div>
+    <div>Elizabeth Calderon (1) 🏆</div>
+    <div>Francisco Romero (1) 🏆</div>
+    <div>Gilberto Medero (1) 🏆</div>
+  </div>
 </body>
 </html>
